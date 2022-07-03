@@ -13,7 +13,7 @@ class DetailScreen : AppCompatActivity() {
     @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_detail_screeen)
+        setContentView(R.layout.activity_detail_screen)
         // Get the Intent that started this activity and extract the string
         val title = intent.getStringExtra("title")
         val owner = intent.getStringExtra("owner")
