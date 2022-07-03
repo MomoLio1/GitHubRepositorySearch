@@ -3,6 +3,7 @@
     package="com.example.gitlabrepositorysearch">
 
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name=".config.ConfigurationClass"
         android:allowBackup="true"
@@ -12,7 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GitLabRepositorySearch">
         <activity
-
+            android:name=".application.DetailScreen"
+            android:exported="false" />
+        <activity
             android:name=".application.MainActivity"
             android:exported="true">
             <intent-filter>

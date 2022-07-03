@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">GitLabRepositorySearch</string>
     <string name="enter_keyword">Enter Keyword</string>
+    <string name="details">Details</string>
+    <string name="url">url</string>
+    <string name="title">title</string>
+    <string name="owner">owner</string>
+    <string name="description">description</string>
 </resources>

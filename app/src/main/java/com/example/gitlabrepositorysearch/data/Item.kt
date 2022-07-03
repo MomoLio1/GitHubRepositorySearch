@@ -5,7 +5,9 @@ data class Item(
     val url: String,
     val owner: Owner,
     val full_name: String,
-    val name: String
+    val name: String,
+    val description: String,
+    val size: Int
 
 )
 data class Owner(

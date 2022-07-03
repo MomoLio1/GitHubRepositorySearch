@@ -55,14 +55,14 @@ class MainActivity : AppCompatActivity() {
             editor.putString("queryKw", queryKeyword)
             editor.putInt("pageNr", pageNumber)
 
-            addData()
+            getRepositories()
         }
         setRecyclerViewScrollListener()
 
     }
 
     @SuppressLint("NotifyDataSetChanged")
-    fun addData() {
+    fun getRepositories() {
         binding.loadingPanel.visibility = View.VISIBLE
         //shared preferences
         val prefs = getSharedPreferences("SharedPreferences", Context.MODE_PRIVATE)
@@ -106,7 +106,7 @@ class MainActivity : AppCompatActivity() {
                     pageNumber = oldPageNumber + 1
                     editor.putInt("pageNr", pageNumber)
                     binding.loadingPanel.visibility = View.VISIBLE
-                    addData()
+                    getRepositories()
                     //get State
                     val recyclerViewState = recyclerView.layoutManager?.onSaveInstanceState()
                     // Restore state
